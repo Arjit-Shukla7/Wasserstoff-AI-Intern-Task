@@ -364,24 +364,3 @@ The system is evaluated on:
 3. Make your changes
 4. Add tests for new functionality
 5. Submit a pull request
-
-## 📄 License
-
-This project is created for the Wasserstoff AI internship task. Please refer to the internship guidelines for usage terms.
-
-## 📞 Support
-
-For questions or issues:
-- Create an issue in the repository
-- Contact: divyansh.sharma@thewasserstoff.com
-
-## 🙏 Acknowledgments
-
-- Wasserstoff for the internship opportunity
-- OpenAI for GPT models and embeddings
-- Qdrant for vector database
-- FastAPI community for the excellent framework
-
----
-
-**Note**: This application processes and analyzes documents using AI. Ensure you have appropriate permissions for all documents you upload and comply with data privacy regulations.

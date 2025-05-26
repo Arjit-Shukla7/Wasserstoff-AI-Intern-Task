@@ -36,7 +36,7 @@ class DocumentProcessor:
         try:
             reader = PdfReader(file_path)
             pages_content = []
-            
+             
             for page_num, page in enumerate(reader.pages):
                 text = page.extract_text()
                 paragraphs = self._split_into_paragraphs(text)

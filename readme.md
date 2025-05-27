@@ -261,16 +261,7 @@ For testing, you can use various document types:
    # Create Space with Docker
    # Upload code and set secrets
    ```
-
-### Production Considerations
-
-- Use PostgreSQL instead of SQLite for production
-- Implement proper authentication
-- Set up monitoring and logging
-- Configure CORS properly
-- Use environment-specific configurations
-- Implement rate limiting
-
+   
 ## 🔧 Troubleshooting
 
 ### Common Issues
@@ -305,34 +296,6 @@ For testing, you can use various document types:
 - Optimize vector database indices
 - Use document preprocessing pipelines
 
-## 📊 Evaluation Metrics
-
-The system is evaluated on:
-
-### Functionality (40%)
-- Document upload and processing
-- Theme identification accuracy
-- Citation precision
-- Query response quality
-
-### Code Quality (30%)
-- Modular design
-- Error handling
-- Documentation
-- Version control usage
-
-### System Design (20%)
-- Scalability considerations
-- Database design
-- API structure
-- Deployment readiness
-
-### User Experience (10%)
-- Interface usability
-- Response time
-- Error messages
-- Documentation clarity
-
 ## 📋 Technical Details
 
 ### Document Processing Pipeline
@@ -356,32 +319,3 @@ The system is evaluated on:
 - **Similarity Metric**: Cosine similarity
 - **Chunk Size**: 1000 tokens with 200 token overlap
 - **Top-K Retrieval**: 5 most relevant chunks per document
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-## 📄 License
-
-This project is created for the Wasserstoff AI internship task. Please refer to the internship guidelines for usage terms.
-
-## 📞 Support
-
-For questions or issues:
-- Create an issue in the repository
-- Contact: divyansh.sharma@thewasserstoff.com
-
-## 🙏 Acknowledgments
-
-- Wasserstoff for the internship opportunity
-- OpenAI for GPT models and embeddings
-- Qdrant for vector database
-- FastAPI community for the excellent framework
-
----
-
-**Note**: This application processes and analyzes documents using AI. Ensure you have appropriate permissions for all documents you upload and comply with data privacy regulations.

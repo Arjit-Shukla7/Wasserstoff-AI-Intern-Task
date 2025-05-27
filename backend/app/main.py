@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastAPI.staticfiles import StaticFiles
+from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager
 import logging
-from app.core.database import init_db
+#from app.core.database import init_db
 from app.api.documents import router as documents_router
 from app.api.query import router as query_router
 
@@ -67,6 +67,6 @@ if __name__ == "__main__":
         "main:app",
         host="0.0.0.0",
         port=8000,
-        reload=True, 
+        reload=True,
         log_level="info"
     )

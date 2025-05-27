@@ -17,13 +17,13 @@ An AI-powered chatbot that analyzes large document collections to identify commo
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   FastAPI       │    │   Vector DB     │
-│   (HTML/JS)     │◄──►│   Backend       │◄──►│   (Qdrant)      │
+│   (HTML/JS)     │◄──►│   Backend       │◄──►│   (ChromaDB)    │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                               │
                               ▼
                        ┌─────────────────┐
                        │   AI Services   │
-                       │ (OpenAI/Groq)   │
+                       │    (OpenAI)     │
                        └─────────────────┘
 ```
 
@@ -117,8 +117,6 @@ chatbot_theme_identifier/
 4. **Set environment variables**
    ```bash
    export OPENAI_API_KEY="your-openai-key"
-   export GROQ_API_KEY="your-groq-key"  # Optional
-   export GOOGLE_API_KEY="your-google-key"  # Optional
    ```
 
 5. **Run the application**
@@ -136,15 +134,13 @@ chatbot_theme_identifier/
 | `GROQ_API_KEY` | Groq API key | No | - |
 | `GOOGLE_API_KEY` | Google API key | No | - |
 | `DATABASE_URL` | Database connection string | No | `sqlite:///./data/chatbot.db` |
-| `QDRANT_HOST` | Qdrant host | No | `localhost` |
-| `QDRANT_PORT` | Qdrant port | No | `6333` |
+| `ChromaDB_HOST` | ChromaDB host | No | `localhost` |
+| `ChromaDB_PORT` | ChromaDB port | No | `6333` |
 
 ### API Configuration
 
 The application supports multiple AI providers:
 - **OpenAI GPT-4/GPT-3.5**: Primary recommendation
-- **Groq (Llama)**: Free alternative with good performance
-- **Google Gemini**: Alternative option
 
 ## 📚 Usage
 
